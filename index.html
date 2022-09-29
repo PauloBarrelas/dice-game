@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple web app developed by Paulo Barrelas, consisting a dice game for 2 players. The 1st to reach 30 points wins."> 
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <h1>Get 30 points to win</h1>
+
+    <div class="box" id="box-top">
+        <p id="player-message">Player 1 Turn</p>
+    </div>
+
+    <div class="box" id="box-bottom">
+
+        <div class="player-info-wrapper">
+            <div id="player1">
+                <p id="player1-score-txt">Player 1 Score</p>
+                <p id="player1-score">0</p>
+                <img src="/img/Dice-01.svg" alt="dice number" class="border" id="player1-dice">
+
+            </div>
+
+            <div class="divider"></div>
+
+            <div id="player2">
+                <p id="player2-score-txt">Player 2 Score</p>
+                <p id="player2-score">0</p>
+                <img src="/img/Dice-01.svg" alt="dice number" id="player2-dice">
+            </div>
+
+        </div> <!--//player-info-wrapper-->
+    </div> <!--//box-bottom-->
+
+    <button id="roll-btn">ROLL</button>
+    <button id="reset-btn">RESET</button>
+
+    <footer>
+
+            <p class="copyright">©2022 Paulo Barrelas</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/PauloBarrelas" target="_blank">
+                    <img class="social" src="/img/github-round.svg" alt="github icon">
+                </a>
+    
+                <a href="https://www.linkedin.com/in/paulo-barrelas-99a06a2/" target="_blank">
+                    <img class="social" src="/img/linkedin-round.svg" alt="linkedin icon">
+                </a>
+                
+                <a href="https://twitter.com/paulo_barrelas" target="_blank">
+                    <img class="social" src="/img/twitter-simple.svg" alt="twitter icon">
+                </a>
+            </div>
+        
+        
+        
+    </footer>
+    <script src="/index.js"></script>
+</body>
+</html>

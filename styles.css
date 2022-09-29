@@ -1,0 +1,154 @@
+html,
+body {
+    --clr-text-1: #D4D4D4;
+    --clr-box: #343434;
+    --clr-shadow: rgba(0, 0, 0, 25%);
+    --clr-accent: #FF5353;
+    --clr-bg: #1E1E1E;
+    --clr-divider: rgba(213, 213, 213, 0.26);
+    --border-radius: 60px;
+
+    background-color: var(--clr-bg);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+
+}
+
+h1,
+#player1-score-txt,
+#player2-score-txt,
+#player1-score,
+#player2-score {
+    color: var(--clr-text-1);
+}
+
+.box,
+#player1-dice,
+#player2-dice {
+    box-shadow: 10px 10px 8px var(--clr-shadow);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 4rem;
+    margin-bottom: 0;
+}
+
+.box {
+    max-width: 500px;
+    padding: 1rem 0;
+    background-color: var(--clr-box);
+    border-radius: var(--border-radius);
+    margin: 1rem auto 2rem;
+}
+
+#player-message {
+    color: var(--clr-accent);
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+.player-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+.divider {
+    background-color: var(--clr-divider);
+    width: 1px;
+}
+
+#player1-score-txt,
+#player2-score-txt {
+    font-size: 1.5rem;
+}
+
+#player1-score,
+#player2-score {
+    font-size: 6rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+#player1-dice,
+#player2-dice {
+    width: 140px;
+    height: 140px;
+    border-radius: 28px;
+}
+
+.border {
+    border: 6px solid var(--clr-accent);
+}
+
+
+/** Buttons **/
+#roll-btn,
+#reset-btn {
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--clr-bg);
+    background-color: var(--clr-accent);
+    border: 4px solid var(--clr-accent);
+    border-radius: var(--border-radius);
+    padding: 0 3rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+#reset-btn {
+    display: none;
+}
+
+#roll-btn:hover,
+#reset-btn:hover {
+    color: var(--clr-accent);
+    background-color: var(--clr-bg);
+    border: 4px solid var(--clr-accent);
+}
+
+/** social section **/
+
+footer {
+    max-width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6rem;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 1.8rem;
+    margin-left: 2.1rem;
+    transition: all 0.7s ease;
+    opacity: 75%;
+}
+
+.social:hover {
+    opacity: 50%;
+}
+
+.copyright {
+    display: inline-block;
+    margin-top: .5rem;
+    color: var(--clr-text-1);
+}
